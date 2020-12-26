@@ -1,0 +1,26 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Portfolio Template of Mohammad Wahid",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "prod": "nodemon app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wahid55/portfolio.git"
+  },
+  "author": "Mohammad Wahid",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/wahid55/portfolio/issues"
+  },
+  "homepage": "https://github.com/wahid55/portfolio#readme",
+  "dependencies": {
+    "bootstrap": "^4.5.3",
+    "express": "^4.17.1",
+    "nodemon": "^2.0.6",
+    "path": "^0.12.7"
+  }
+}
