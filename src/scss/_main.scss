@@ -1,0 +1,110 @@
+$primary: #000000;
+$hero-bg: $primary;
+$scrollbar-width: 5px;
+$scrollbar-bg-color: $white;
+$scrollbar-thumb-color: $primary;
+$scrollbar-thumb-hover-color: $primary;
+$hero-scroll-btn-color: rgba($white, .5);
+
+
+
+body {
+	font-family: 'Redressed', cursive;
+}
+
+::-webkit-scrollbar {
+	width: $scrollbar-width;
+}
+
+::-webkit-scrollbar-track {
+	background: $scrollbar-bg-color;
+}
+
+::-webkit-scrollbar-thumb {
+	background: $scrollbar-thumb-color;
+}
+
+::-webkit-scrollbar-thumb:hover {
+	background: $scrollbar-thumb-hover-color;
+}
+
+
+::-moz-selection {
+	color: $white;
+	background: rgba($primary, .99);
+}
+
+::selection {
+	color: $white;
+	background: rgba($primary, .99);
+}
+
+
+
+
+
+
+.preloader {
+	position: fixed;
+	top: 0;
+	left: 0;
+	background: $primary;
+	width: 100%;
+	height: 100%;
+	z-index: 1;
+	svg {
+		fill: $white;
+		width: 100px;
+		height: 100px;
+		position: absolute;
+		top: 50%;
+		margin-top: -50px;
+		left: 50%;
+		margin-left: -50px;
+	}
+}
+
+
+.hero-section {
+	::-moz-selection {
+		color: $primary;
+		background: rgba($white, .99);
+	}
+
+	::selection {
+		color: $primary;
+		background: rgba($white, .99);
+	}
+
+	height: 100vh;
+	#hero-anim {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		background: $hero-bg;
+	}
+	.hero-wrapper {
+		background: rgba(black, .5);
+		position: relative;
+		z-index: 1;
+		height: 100%;
+		color: white;
+	}
+	.hero-scroll-btn {
+		position: absolute;
+		bottom: 20px;
+		width: 40px;
+		height: 40px;
+		left: 50%;
+		margin-left: -20px;
+		z-index: 1;
+		text-align: center;
+		cursor: pointer;
+		svg {
+			fill: $hero-scroll-btn-color;
+		}
+	}
+}
+
+
+
